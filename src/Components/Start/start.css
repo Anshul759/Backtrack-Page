@@ -1,0 +1,11 @@
+#box{
+    margin-top: 0px;
+    min-height: 100vh;
+    border: 2px solid black;
+    width: 100%;
+}
+
+#logoimage{
+    width: 15vw;
+    height: 20vh;
+}
