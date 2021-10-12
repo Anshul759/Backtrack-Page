@@ -1,9 +1,16 @@
-import logo from './logo.svg';
+import  React from "react"
 import './App.css';
-
+import { BrowserRouter as Router  } from "react-router-dom";
+import Navigation from './Components/Navigation/navigation'
+import Start from './Components/Start/start'
 function App() {
   return (
-    <Backtrack />
+    <Router>
+      <Navigation/>
+      <Start />
+      {/* <Info />
+      <Footer /> */}
+    </Router>
   );
 }
 
