@@ -5,12 +5,19 @@ import logoImage from '../../resource/logo.PNG'
 
 export default function Start() {
     return (
-        <div id="box">
+        <><div id="box">
             <div id="logo">
-                <img src={logoImage} alt="Not found" id="logoimage" />
+                <h3 id="centrelogo"><img src={logoImage} alt="Not found" id="logoimage" /></h3>
+            </div>
+            <div id="field-legend">
+                <fieldset><legend>Wash Your Hands</legend></fieldset>
+                <fieldset><legend>Stay Apart</legend></fieldset>
+                <fieldset><legend></legend></fieldset>
+                <fieldset><legend></legend></fieldset>
             </div>
         </div>
-
+        
+        </>
     )
 }
 

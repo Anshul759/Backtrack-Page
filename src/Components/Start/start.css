@@ -1,11 +1,60 @@
+:root{
+    --theme1: #f35434;
+}
+
 #box{
     margin-top: 0px;
-    min-height: 100vh;
-    border: 2px solid black;
+    height: 100vh;
     width: 100%;
 }
 
-#logoimage{
-    width: 15vw;
-    height: 20vh;
+#centrelogo {
+    display: flex;
+    flex-direction: row;
 }
+  
+#centrelogo:before,
+#centrelogo:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid var(--theme1);
+    margin: auto;
+}
+  
+#logoimage {
+    height: 19.5vh;
+    width: 12vw;
+    border-radius: 100%;
+    margin: 3px;
+}
+
+#field-legend {
+    display: grid; 
+    margin: auto; /* to center */
+    margin-top: auto; /* to center */
+    margin-bottom: auto;
+    width: 300px; height: 300px; 
+  }
+  
+fieldset {
+    border: 10px solid transparent;
+    border-top-color: var(--theme1); 
+    box-sizing: border-box; 
+    grid-area: 1 / 1; /* first row, first column */
+    padding: 20px; 
+    width: inherit; 
+  }
+
+  fieldset:nth-of-type(2){ transform: rotate(-180deg); }
+  fieldset:nth-of-type(3){ transform: rotate(-90deg); }
+  fieldset:nth-of-type(4){ transform: rotate(90deg); }
+
+  legend {
+    font: 15pt/0 'Averia Serif Libre'; 
+    margin: auto; /* to center */
+    padding: 0 4px; 
+  }
+
+  fieldset:nth-of-type(2) > legend { 
+    transform: rotate(180deg);
+  }

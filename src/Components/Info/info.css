@@ -1,0 +1,33 @@
+:root{
+    --theme1: #f35434
+}
+
+#box-2{
+    background-color: var(--theme1);
+    height: 50vh;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 4vh 0;
+}
+
+#centrehead {
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+  
+#centrehead:before,
+#centrehead:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid white;
+    margin: auto;
+}
+
+#defination{
+    color: white;
+    padding: 5vh;
+    font-size: 1.5rem;
+    margin: 4vh auto;
+    width: 75vw;
+}
