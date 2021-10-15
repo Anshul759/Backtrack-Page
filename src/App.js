@@ -4,13 +4,14 @@ import { BrowserRouter as Router  } from "react-router-dom";
 import Navigation from './Components/Navigation/navigation'
 import Start from './Components/Start/start'
 import Info from './Components/Info/info'
+import Footer from './Components/Footer/footer'
 function App() {
   return (
     <Router>
       <Navigation/>
       <Start />
        <Info />
-      {/*<Footer /> */}
+      <Footer />
     </Router>
   );
 }

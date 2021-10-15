@@ -1,0 +1,26 @@
+.foot{
+    background-image: url('../../resource/backfooter.jpg');
+    min-height: 50vh;
+    padding: 2vh 0;
+}
+
+.linklist{
+    padding: 2vh;
+    line-height: 5vh;
+}
+
+#footer-panel{
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.footer-icon{
+    box-sizing: content-box;
+    width: 1.5rem;
+    height: 1.5rem;
+    align-self: center;
+    padding: 1vh;
+    margin: 10px;
+}
+

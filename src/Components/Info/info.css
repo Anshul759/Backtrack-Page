@@ -1,33 +1,87 @@
 :root{
-    --theme1: #f35434
+    --theme1: #f35434;
 }
 
-#box-2{
+/* div,p{
+    border:2px solid black;
+}  */
+
+#box-2-1{
     background-color: var(--theme1);
-    height: 50vh;
+    min-height: 50vh;
     width: 100%;
     box-sizing: border-box;
     padding: 4vh 0;
 }
 
+#box-2-2{
+    min-height: 80vh;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 4vh 3vw;
+}
+
 #centrehead {
     display: flex;
     flex-direction: row;
-    color: white;
+    color: #e4f6f6;
 }
   
 #centrehead:before,
 #centrehead:after {
     content: "";
     flex: 1 1;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #e4f6f6;
     margin: auto;
 }
 
+
 #defination{
-    color: white;
-    padding: 5vh;
+    color: #e4f6f6;
     font-size: 1.5rem;
     margin: 4vh auto;
-    width: 75vw;
+    width: 80vw;
+    padding: 2vh 2vw;
 }
+
+#aspectsheading{
+    text-align: center;
+    margin: 7vh 2vw;
+}
+
+.hrline{
+    width: 70vw;
+    margin: 4vh auto;
+    border: 2px solid black;
+    align: center;
+
+}
+
+.row{
+    box-sizing: border-box;
+    padding: 3vh 2vw;
+    padding-bottom: 0px;
+    margin-top: 4vh ;
+}
+
+.cardblocks{
+    box-sizing: border-box;
+    padding: 2vh 1vw;
+    border-radius: 2%;
+    border: 0px;
+    margin: 2vh 1.5vw;
+}
+
+.cardb{
+    box-sizing: border-box;
+    color: #262e34; 
+    padding: 2vh 2vw;
+    line-height: 4vh;
+    text-align: center;
+    margin:auto;
+    font-weight: bold;
+}
+
+
+
+
