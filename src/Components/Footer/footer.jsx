@@ -1,52 +1,45 @@
 import React from "react";
-// import Card from "react-bootstrap/Card";
-//import { Container } from "react-bootstrap";
 import "../Footer/footer.css"
-import fb from "../../resource/fb.png"
-import insta from "../../resource/insta.png"
-import linkedin from "../../resource/in.png"
-import gmail from "../../resource/gmail.png"
-
 export default function Footer() {
     return (
         <>
-        <footer className="page-footer font-small blue pt-4 foot">
-            <div className="container-fluid text-center text-md-left" style={{ padding : "3vh" }}>
-                <div className="row" style={{ padding : "3vh" }}>
-                    <div className="col-md-6 mt-md-3 mt-6" style={{ padding : "3vh" }}>
-                        <h5 className="text-uppercase"> Algorithm VE</h5>
-                        <div id="footer-panel">
-                            <a href="#a"><img src={fb} alt="fb" class="footer-icon"></img></a>
-                            <a href="#a"><img src={insta} alt="insta" class="footer-icon"></img></a> 
-                            <a href="mailto:#a"><img src={gmail} alt="GMAIL" class="footer-icon"></img></a> 
-                            <a href="#a"><img src={linkedin} alt="in" class="footer-icon"></img></a> 
+        <footer className="text-center text-lg-start foot">
+                <div className="row my-4" style={{ width: "100%"}}>
+                    <div className="col-lg-6 col-md-6 mb-4 mb-md-0">
+                        <div className="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style={{ width: "12vw" , height: "14vh" }}>
+                            <img src="https://mdbootstrap.com/img/Photos/new-templates/animal-shelter/logo.png" height="70" alt="" loading="lazy" />
                         </div>
+                        <p>Homless animal shelter The budgetary unit of the Capital City of Warsaw</p>
+
                     </div>
-
-                    <hr className="clearfix w-100 d-md-none pb-0"/>
-
-                    <div className="col-md-3 mb-md-0 mb-3 linklist">
-                        <h5 className="text-uppercase">Links</h5>
-                        <ul className="list-unstyled">
-                            <li><a href="#!">Link 1</a></li>
-                            <li><a href="#!">Link 2</a></li>
-                            <li><a href="#!">Link 3</a></li>
-                            <li><a href="#!">Link 4</a></li>
+                    <div className="col-lg-2 col-md-6 mb-4 mb-md-0">
+                        <h5 className="text-uppercase mb-4 text-center heads">Animals</h5>
+                        <ul className="list-unstyled text-center">
+                            <li className="mb-2 link"><a href="#!">When your pet is missing</a></li>
+                            <li className="mb-2 link"><a href="#!">Recently found</a></li>
+                            <li className="mb-2 link"><a href="#!">How to adopt?</a></li>
                         </ul>
                     </div>
 
-                    <div className="col-md-3 mb-md-0 mb-3 linklist">
-                        <h5 className="text-uppercase">Links</h5>
-                        <ul className="list-unstyled">
-                            <li><a href="#!">Link 1</a></li>
-                            <li><a href="#!">Link 2</a></li>
-                            <li><a href="#!">Link 3</a></li>
-                            <li><a href="#!">Link 4</a></li>
+                    <div className="col-lg-2 col-md-6 mb-4 mb-md-0">
+                        <h5 className="text-uppercase mb-4 text-center heads">Animals</h5>
+                        <ul className="list-unstyled text-center">
+                            <li className="mb-2 link"><a href="#!">General information</a></li>
+                            <li className="mb-2 link"><a href="#!">About the shelter</a></li>
+                            <li className="mb-2 link"><a href="#!">Statistic data</a></li>
+                        </ul>
+                    </div>
+
+                    <div className="col-lg-2 col-md-6 mb-4 mb-md-0">
+                        <h5 className="text-uppercase mb-4 text-center heads">Contact</h5>
+                        <ul className="list-unstyled text-center">
+                            <li><p>Warsaw, 57 Street, Poland</p></li>
+                            <li><p>+ 01 234 567 89</p></li>
+                            <li><p>contact@example.com</p></li>
                         </ul>
                     </div>
                 </div>
-            </div>
-        </footer>        
+        </footer>
         </>
     )
 }

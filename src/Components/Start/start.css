@@ -2,15 +2,46 @@
     --theme1: #f35434;
 }
 
+div{
+  border:1px solid black;
+}
+
 #box{
+    box-sizing: border-box;
     margin-top: 0px;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
+}
+
+.startbody{
+    border: 2px solid black;
+    margin: 1vh 15vw;
+    padding: 6vh 4vw;
+    height: 100%;
+}
+
+#legend1{
+    position: relative;
+    border: 1px solid black;
+    top: -9vh;
+    width: 20vw;
+    margin: auto;
+    font-size: 4vh;
+    text-align: center;
+}
+
+#legend2{
+    position: relative;
+    border: 1px solid black;
+    top: 10vh;
+    font-size: 4vh;
 }
 
 #centrelogo {
     display: flex;
     flex-direction: row;
+    margin-bottom: 3vh;
+    padding: 2hv 0;
 }
   
 #centrelogo:before,
@@ -22,39 +53,13 @@
 }
   
 #logoimage {
-    height: 19.5vh;
-    width: 12vw;
+    height: 12vh;
+    width: 6vw;
     border-radius: 100%;
-    margin: 3px;
+    margin: 0 1vw;
 }
 
-#field-legend {
-    display: grid; 
-    margin: auto; /* to center */
-    margin-top: auto; /* to center */
-    margin-bottom: auto;
-    width: 300px; height: 300px; 
-  }
+.startbody{
+
+}
   
-fieldset {
-    border: 10px solid transparent;
-    border-top-color: var(--theme1); 
-    box-sizing: border-box; 
-    grid-area: 1 / 1; /* first row, first column */
-    padding: 20px; 
-    width: inherit; 
-  }
-
-  fieldset:nth-of-type(2){ transform: rotate(-180deg); }
-  fieldset:nth-of-type(3){ transform: rotate(-90deg); }
-  fieldset:nth-of-type(4){ transform: rotate(90deg); }
-
-  legend {
-    font: 15pt/0 'Averia Serif Libre'; 
-    margin: auto; /* to center */
-    padding: 0 4px; 
-  }
-
-  fieldset:nth-of-type(2) > legend { 
-    transform: rotate(180deg);
-  }
