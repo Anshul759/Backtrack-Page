@@ -8,10 +8,10 @@
 
 #box-2-1{
     background-color: var(--theme1);
-    min-height: 50vh;
+    min-height: 60vh;
     width: 100%;
     box-sizing: border-box;
-    padding: 4vh 0;
+    padding: 6vh 0;
 }
 
 #box-2-2{
@@ -41,7 +41,7 @@
     font-size: 1.5rem;
     margin: 4vh auto;
     width: 80vw;
-    padding: 2vh 2vw;
+     padding: 4vh 2vw; 
 }
 
 #aspectsheading{
@@ -76,7 +76,6 @@
     box-sizing: border-box;
     color: #262e34; 
     padding: 2vh 2vw;
-    line-height: 4vh;
     text-align: center;
     margin:auto;
     font-weight: bold;

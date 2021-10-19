@@ -2,45 +2,19 @@
     --theme1: #f35434;
 }
 
-div{
-  border:1px solid black;
-}
-
 #box{
     box-sizing: border-box;
-    margin-top: 0px;
+    margin-top: 4vh;
     min-height: 100vh;
+    margin-bottom: 10vh;
+    padding-bottom: 10vh;
     width: 100%;
-}
-
-.startbody{
-    border: 2px solid black;
-    margin: 1vh 15vw;
-    padding: 6vh 4vw;
-    height: 100%;
-}
-
-#legend1{
-    position: relative;
-    border: 1px solid black;
-    top: -9vh;
-    width: 20vw;
-    margin: auto;
-    font-size: 4vh;
-    text-align: center;
-}
-
-#legend2{
-    position: relative;
-    border: 1px solid black;
-    top: 10vh;
-    font-size: 4vh;
 }
 
 #centrelogo {
     display: flex;
     flex-direction: row;
-    margin-bottom: 3vh;
+    margin-bottom: 7vh;
     padding: 2hv 0;
 }
   
@@ -48,18 +22,48 @@ div{
 #centrelogo:after {
     content: "";
     flex: 1 1;
-    border-bottom: 2px solid var(--theme1);
+    border-bottom: 4px solid var(--theme1);
     margin: auto;
 }
   
 #logoimage {
     height: 12vh;
     width: 6vw;
-    border-radius: 100%;
     margin: 0 1vw;
+    border-radius: 100%;
 }
 
 .startbody{
-
+    border: 2px solid var(--theme1);
+    margin: 1vh 15vw;
+    padding: 6vh 4vw;
+    height: 100%;
 }
-  
+
+#legend1{
+    position: relative;
+    display: inline;
+    background-color: white;
+    top: -11vh;
+    padding: 1vh;
+    font-size: 6vh;
+    text-align: center;
+}
+
+#legend2{
+    position: relative;
+    display: inline;
+    background-color: white;
+    border: 2px solid var(--theme1);
+    top: 10vh;
+    font-size: 6vh;
+    font-weight:normal;
+    padding: 1.5vh 2vw;
+}
+
+#legend2:hover{
+    background-color: var(--theme1);
+    color: white;
+    cursor: pointer;
+}
+
